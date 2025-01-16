@@ -43,6 +43,6 @@
   height: 80px;
   background: white;
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-  transform: rotate(180deg);
+  /* Removed the transform: rotate(180deg) to fix upside-down snow caps */
   z-index: 2;
 }
