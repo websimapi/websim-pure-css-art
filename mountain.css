@@ -8,6 +8,7 @@
   border-right: 150px solid transparent;
   border-bottom: 200px solid var(--mountain-color);
   overflow: visible;
+  z-index: 1;
 }
 
 .mountain::after {
@@ -22,6 +23,7 @@
     transparent 55%);
   background-size: 20px 20px;
   transform: rotate(45deg);
+  z-index: 1;
 }
 
 .m2 {
@@ -30,22 +32,17 @@
   border-right: 200px solid transparent;
   border-bottom: 300px solid var(--mountain-color);
   opacity: 0.8;
+  z-index: 1;
 }
 
 .snow-cap {
   position: absolute;
-  top: -40px;
-  left: -50px;
-  width: 100px;
-  height: 50px;
+  top: -80px;
+  left: -40px;
+  width: 80px;
+  height: 80px;
   background: white;
-  clip-path: polygon(50% 100%, 100% 0%, 0% 0%);
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-}
-
-.m2 .snow-cap {
-  top: -60px;
-  left: -65px;
-  width: 130px;
-  height: 65px;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  transform: rotate(180deg);
+  z-index: 2;
 }

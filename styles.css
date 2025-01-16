@@ -1,3 +1,4 @@
+/* First implementing flying birds from previous comments */
 @import 'base.css';
 @import 'sun.css';
 @import 'cloud.css';
@@ -5,3 +6,5 @@
 @import 'tree.css';
 @import 'grass.css';
 @import 'animations.css';
+@import 'birds.css';
+@import 'butterflies.css';

@@ -1,0 +1,56 @@
+.butterfly {
+  position: absolute;
+  bottom: 120px;
+}
+
+.butterfly::before,
+.butterfly::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #ff69b4;
+  border-radius: 50% 50% 0 50%;
+  animation: flapWings 0.8s ease-in-out infinite alternate;
+}
+
+.butterfly::after {
+  right: 0;
+  transform: rotateY(180deg);
+  animation-delay: 0.4s;
+}
+
+.butterfly-1 {
+  left: 150px;
+  animation: butterflyFloat 20s ease-in-out infinite;
+}
+
+.butterfly-2 {
+  left: 350px;
+  animation: butterflyFloat 25s ease-in-out infinite;
+  animation-delay: 5s;
+}
+
+@keyframes flapWings {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes butterflyFloat {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, -30px);
+  }
+  50% {
+    transform: translate(100px, 0);
+  }
+  75% {
+    transform: translate(50px, -20px);
+  }
+}

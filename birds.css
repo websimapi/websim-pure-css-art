@@ -1,0 +1,61 @@
+.bird {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+}
+
+.bird::before,
+.bird::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background: #333;
+  border-radius: 50%;
+}
+
+.bird::before {
+  transform: rotate(45deg);
+}
+
+.bird::after {
+  transform: rotate(-45deg);
+}
+
+.bird-1 {
+  top: 120px;
+  left: 0;
+  animation: flyAcross 15s linear infinite;
+}
+
+.bird-2 {
+  top: 180px;
+  left: -50px;
+  animation: flyAcross 18s linear infinite;
+  animation-delay: 2s;
+}
+
+.bird-3 {
+  top: 150px;
+  left: -100px;
+  animation: flyAcross 20s linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes flyAcross {
+  0% {
+    transform: translateX(-100px) translateY(0);
+  }
+  25% {
+    transform: translateX(25vw) translateY(-20px);
+  }
+  50% {
+    transform: translateX(50vw) translateY(0);
+  }
+  75% {
+    transform: translateX(75vw) translateY(-20px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)) translateY(0);
+  }
+}
