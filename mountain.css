@@ -7,7 +7,7 @@
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
   border-bottom: 200px solid var(--mountain-color);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .mountain::after {
@@ -34,11 +34,19 @@
 
 .snow-cap {
   position: absolute;
-  top: -80px;
-  left: -40px;
-  width: 80px;
-  height: 80px;
+  top: -40px;
+  left: -50px;
+  width: 100px;
+  height: 50px;
   background: white;
   clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
   transform: rotate(180deg);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.m2 .snow-cap {
+  top: -60px;
+  left: -65px;
+  width: 130px;
+  height: 65px;
 }
