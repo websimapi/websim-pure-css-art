@@ -7,3 +7,13 @@
   from { transform: translateX(100vw); }
   to { transform: translateX(-100vw); }
 }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

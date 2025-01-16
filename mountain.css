@@ -7,6 +7,21 @@
   border-left: 150px solid transparent;
   border-right: 150px solid transparent;
   border-bottom: 200px solid var(--mountain-color);
+  overflow: hidden;
+}
+
+.mountain::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, 
+    transparent 45%, 
+    rgba(139, 69, 19, 0.3) 45%,
+    rgba(139, 69, 19, 0.3) 55%,
+    transparent 55%);
+  background-size: 20px 20px;
+  transform: rotate(45deg);
 }
 
 .m2 {
@@ -15,4 +30,15 @@
   border-right: 200px solid transparent;
   border-bottom: 300px solid var(--mountain-color);
   opacity: 0.8;
+}
+
+.snow-cap {
+  position: absolute;
+  top: -80px;
+  left: -40px;
+  width: 80px;
+  height: 80px;
+  background: white;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+  transform: rotate(180deg);
 }

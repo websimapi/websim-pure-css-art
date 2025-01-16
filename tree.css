@@ -10,9 +10,10 @@
   position: absolute;
   width: 20px;
   height: 40px;
-  background: #654321;
+  background: linear-gradient(90deg, #543c27, #654321, #543c27);
   bottom: 0;
   left: -10px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .tree:after {
@@ -25,8 +26,17 @@
   border-bottom: 80px solid var(--tree-color);
   bottom: 30px;
   left: -40px;
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+  animation: treeWave 3s ease-in-out infinite;
 }
 
-.t1 { left: 100px; }
-.t2 { left: 200px; }
-.t3 { left: 800px; }
+.t1 { left: 100px; animation-delay: 0.5s; }
+.t2 { left: 200px; animation-delay: 0.2s; }
+.t3 { left: 800px; animation-delay: 0.8s; }
+.t4 { left: 900px; animation-delay: 0.3s; }
+.t5 { left: 300px; animation-delay: 0.6s; }
+
+@keyframes treeWave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(2deg); }
+}

@@ -4,6 +4,7 @@
   height: 40px;
   background: var(--cloud-color);
   border-radius: 20px;
+  filter: drop-shadow(0 5px 15px rgba(0,0,0,0.1));
 }
 
 .cloud:before,
@@ -31,6 +32,7 @@
 .c1 {
   top: 100px;
   right: 200px;
+  transform: scale(1.2);
   animation: drift 20s linear infinite;
 }
 
@@ -38,4 +40,18 @@
   top: 150px;
   right: 400px;
   animation: drift 25s linear infinite;
+}
+
+.c3 {
+  top: 80px;
+  right: 600px;
+  transform: scale(0.8);
+  animation: drift 22s linear infinite;
+}
+
+.c4 {
+  top: 180px;
+  right: 800px;
+  transform: scale(1.5);
+  animation: drift 28s linear infinite;
 }
