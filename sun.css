@@ -1,0 +1,11 @@
+.sun {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background: var(--sun-color);
+  border-radius: 50%;
+  box-shadow: 0 0 50px #FFD700;
+  animation: float 4s ease-in-out infinite;
+}

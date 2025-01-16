@@ -1,0 +1,16 @@
+.grass {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: var(--grass-color);
+}
+
+.grass:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: #458B00;
+  bottom: 0;
+}

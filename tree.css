@@ -1,0 +1,32 @@
+.tree {
+  position: absolute;
+  bottom: 100px;
+  width: 0;
+  height: 0;
+}
+
+.tree:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  background: #654321;
+  bottom: 0;
+  left: -10px;
+}
+
+.tree:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 80px solid var(--tree-color);
+  bottom: 30px;
+  left: -40px;
+}
+
+.t1 { left: 100px; }
+.t2 { left: 200px; }
+.t3 { left: 800px; }
